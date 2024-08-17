@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+    @media screen and (max-width: 730px) {
+         #form input{
+            margin: auto;
+            width: 300px;
+          }
+        }
+</style>
+<body>
+   <!-- navbar started -->
+   <div class="navbar bg-[#4c68ff] text-white">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl" href="./index.html">Buy / Sell Corner</a>
+    </div>
+    <div>
+      <button class="btn"><a href="./index.html">All Product</a></button>
+    </div>
+  </div>
+<!-- navbar ended -->
+
+
+
+<!-- post Ads Section started -->
+    <h1 class="text-2xl text-center font-medium mt-[1rem]">Post Ad</h1>
+    <div class="mt-4">
+      <form id="form" class="flex justify-center items-center flex-col gap-4">
+        <!-- <input type="file"  class="file-input file-input-bordered file-input-primary w-full max-w-lg" />       -->
+        <input type="text" id="title" placeholder="Title" class="input input-bordered w-full max-w-lg" />
+        <input type="text" id="description" placeholder="Description" class="input input-bordered w-full max-w-lg" />
+        <input type="number" id="price" placeholder="Price" class="input input-bordered w-full max-w-lg" />
+        <input type="text" id="Name" placeholder="Name" class="input input-bordered w-full max-w-lg" />
+        <input type="number" id="number" placeholder="Number" class="input input-bordered w-full max-w-lg" />
+        <button type="submit" class="btn btn-primary">Post Now</button>
+      </form>
+    </div>
+<!-- post Ads Section ended -->
+
+
+
+
+
+
+
+
+
+<script type="module" src="./script/singleAd.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

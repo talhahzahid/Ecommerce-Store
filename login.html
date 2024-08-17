@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- navbar started -->
+    <div class="navbar bg-[#4c68ff] text-white">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl" href="./index.html">Buy / Sell Corner</a>
+        </div>
+        <div class="flex-none">
+          <div class="dropdown dropdown-end">
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+              </div>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a href="./singleAd.html">Single</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    <!-- navbar ended -->
+
+
+
+  <!-- login started  -->
+  <div class="text-center mt-[2rem] text-2xl font-medium">Login</div>
+  <div class="flex items-center justify-center">
+      <form id="form" class=" mt-[1rem] bg-[#FFF6F6] p-[40px] pt-[38px] pb-[35px] 
+      border-gray-300 w-[350px] border rounded-3xl">
+          <input type="text" placeholder="Enter your email" class="input input-bordered w-full max-w-xs" id="email" />
+          <br />
+          <input type="password" placeholder="Enter your password" class="input input-bordered mt-3 w-full max-w-xs"
+              id="password" />
+          <div class="text-center mt-3">
+              <button class="btn btn-primary" type="submit">Login</button>
+          </div>
+          <div class="text-center mt-3">
+              <a href="./register.html" class="text-blue-500">Not  a user? Please register first</a>
+          </div>
+
+      </form>
+  </div>
+  <!-- login ended  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="./script/login.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

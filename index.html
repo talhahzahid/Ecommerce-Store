@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <style>
+      @media screen and (max-width: 730px) {
+          #input{
+            margin: auto;
+            width: 200px;
+          }
+}
+    </style>
+</head>
+<body>
+    <!-- navbar started -->
+    <div class="navbar bg-[#4c68ff] text-white">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl">Buy / Sell Corner</a>
+        </div>
+        <div>
+          <button class="btn btn-info"><a href="./singleAd.html">+ Post Ads</a></button>
+          <button class="btn btn-success m-2"><a href="./login.html">Login</a></button>
+        </div>
+      </div>
+    <!-- navbar ended -->
+
+     <!-- search bar -->
+      <div class="flex justify-center  mt-[3rem] ">
+        <input type="text" placeholder="Search" class="input input-bordered w-full max-w-lg" id="input" />
+      </div>
+     <!-- search bar -->
+
+    <!-- Alll prodcut show  -->
+      <h1 class="text-2xl m-2 font-medium">Products</h1>
+    <div class="container flex justify-center flex-wrap gap-10 " id="div">
+    </div>
+
+     
+    <script type="module" src="./script/app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
