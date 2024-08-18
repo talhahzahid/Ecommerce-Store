@@ -10,16 +10,16 @@ const email = document.querySelector('#email');
 const password = document.querySelector('#password');
 
 
-// function checkUser(){
-//     onAuthStateChanged(auth, (user) => {
-//         if (user) {
-//           const uid = user.uid;
-//           console.log(uid);
-//         } else {
-//            window.location = './login.html'
-//         }
-//       })
-// }
+function checkUser(){
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+          const uid = user.uid;
+          console.log(uid);
+        } else {
+           window.location = './login.html'
+        }
+      })
+}
 checkUser()
 form.addEventListener("submit",(event)=>{
     event.preventDefault();
