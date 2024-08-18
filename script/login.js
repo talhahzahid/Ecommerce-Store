@@ -1,6 +1,6 @@
 import { 
     signInWithEmailAndPassword,
-    onAuthStateChanged,
+    // onAuthStateChanged,
  } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
 import{auth} from "./config.js"
 
@@ -20,9 +20,7 @@ const password = document.querySelector('#password');
 //         }
 //       })
 // }
-
-
-// checkUser()
+checkUser()
 form.addEventListener("submit",(event)=>{
     event.preventDefault();
     console.log(email.value);
