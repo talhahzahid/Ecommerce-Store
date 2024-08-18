@@ -1,5 +1,6 @@
 
 import { createUserWithEmailAndPassword, } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
+// import { getStorage, ref, uploadBytes } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-storage.js";
 import{auth} from "./config.js"
 
 

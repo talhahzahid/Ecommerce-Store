@@ -4,17 +4,17 @@ import {
 import { collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js"; 
 import {  auth ,db } from "./config.js";
 
-function checkUser(){
-  onAuthStateChanged(auth, (user) => {
-      if (user) {
-        const uid = user.uid;
-        console.log(uid);
-      } else {
-         window.location = './login.html'
-      }
-    })
-}
-checkUser()
+  function checkUser(){
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+          const uid = user.uid;
+          console.log(uid);
+        } else {
+           window.location = './login.html'
+        }
+      })
+  }
+  checkUser()
 
 const div = document.querySelector("#div");
 

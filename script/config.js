@@ -1,6 +1,9 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+import { initializeApp , getApp  } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+// import { getStorage } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-storage.js";
+
+
 
 
 const firebaseConfig = {
@@ -14,7 +17,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
-
+// const firebaseApp = getApp();
+// export const storage = getStorage(firebaseApp, "gs://ecommerce-store-336fc.appspot.com")
